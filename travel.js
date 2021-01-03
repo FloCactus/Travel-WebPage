@@ -1,0 +1,33 @@
+$(document).ready(function(){
+  $('.gallery__slider').slick({
+    dots:true,
+    adaptiveHeight:true,
+    slidesToShow:2,
+    slidesToScroll:2,
+    speed:1000,
+    easing:'ease',
+    initialSlide:0,
+    autoplay:true,
+    autoplaySpeed:5000,
+    pauseOnFocus:true,
+    pauseOnHover:true,
+    pauseOnDotsHover:true,
+    draggable:false,
+    swipe:true,
+    waitForAnimate:false,
+    centerMode:false,
+    variableWidth:false,
+    rows:1,
+    slidesPerRow:1,
+    vertical:false,
+    responsive:[
+      {
+        breakpoint:650,
+        settings:{
+          slidesToShow:1,
+          slidesToScroll:1
+        }
+      }
+    ]
+  });
+});

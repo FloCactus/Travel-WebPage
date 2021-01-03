@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+header{
+  background: url(images/background1.jpg) center / cover no-repeat;
+  background-size: auto;
+  max-width: 100%;
+  max-height: 1080px;
+  position: relative;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu__list ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu__list li{
+  list-style: none;
+  margin-left: 100px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+}
+.menu__list li:hover{
+    font-weight: 700;
+}
+.menu__list a{
+  text-decoration: none;
+  color: #ffff;
+}
+.moto{
+  padding-top: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.moto__statement h1{
+  font-family: inherit;
+  font-size: 90px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+}
+.moto__statement2 h2{
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+  position: relative;
+}
+.moto__statement2 span{
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  font-style: italic;
+}
+.moto__statement3 h4{
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+  margin-top: 70px;
+  padding: 15px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.moto__statement3 h4:hover{
+  background-color: #ffffff;
+  color: black;
+}
+.aboutUs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.aboutUs-Info{
+  max-width: 500px;
+}
+.aboutUs h6{
+  font-family: inherit;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: #c4c4c4;
+  margin-bottom: 5px;
+}
+.aboutUs h4{
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: #000000;
+  margin-top: 5px;
+}
+.aboutUs p{
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #5b5b5c;
+}
+.aboutUs-Info__more{
+  margin-top: 50px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #000000;
+  border:2px solid black;
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.aboutUs-Info__more:hover{
+  background-color: black;
+  color: white;
+}
+.aboutUs-Picture{
+  background-image: linear-gradient(140.0deg, rgba(26,24,24,0.0) 4%, rgba(0,0,0,0.44) 95%);
+  box-shadow: 14px 15px 46px 0px rgba(0,0,0,0.18);
+}
+.gallery h3{
+  font-family: inherit;
+  font-size: 31.9px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  color: #000000;
+  text-align: center;
+  margin-top: 100px;
+}
+.gallery p{
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: #5b5b5c;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow:hidden;
+}
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+  align-items: flex-start;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+/*Конкретный слайдер*/
+.gallery__slider{
+  position:relative;
+  padding: 0px 70px;
+  margin: 20px;
+}
+.gallery__slider .slick-arrow{
+  position:absolute;
+  margin: -30px 0px 0px 0px;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 50px;
+  height: 70px;
+  border:none;
+}
+.gallery__slider .slick-arrow.slick-prev{
+  left: 0;
+  background: url(images/prev.svg) 100% no-repeat;
+}
+.gallery__slider .slick-arrow.slick-next{
+  right:0;
+  background: url(images/next.svg) 100% no-repeat;
+}
+.gallery__slider .slick-arrow.slick-prev:focus,
+.gallery__slider .slick-arrow.slick-next:focus{
+  outline: none;
+}
+.gallery__slider .slick-dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery__slider .slick-dots li{
+  list-style: none;
+  margin: 0px 10px;
+}
+.gallery__slider .slick-dots li button{
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #1C2833;
+  border-style: none;
+  border-radius: 50%;
+}
+.gallery__slider .slick-dots li.slick-active button{
+  background-color:transparent;
+  border: 1px solid #1C2833;
+}
+.gallery__slider .slick-dots li button:focus{
+  outline: none;
+}
+.gallery__item{
+  text-align: center;
+}
+.bookTravel{
+  text-align: center;
+  margin-top: 100px;
+}
+.bookTravel h3{
+  text-align: center;
+  margin-top: 100px;
+  font-family: inherit;
+  font-size: 31.9px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  color: #000000;
+}
+.bookTravel p{
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: #5b5b5c;
+}
+.bookTravelAll{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bookTravelAll__option1,
+.bookTravelAll__option2{
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  max-width: 650px;
+}
+.bookTravelAll__option1 img,
+.bookTravelAll__option2 img{
+  width: 100%;
+}
+.bookTravelAll__option1 h4,
+.bookTravelAll__option2 h4{
+  font-family: inherit;
+  font-size: 19.2px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #000000;
+}
+.bookTravelAll__option1 p,
+.bookTravelAll__option2 p{
+  text-align: left;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 41px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #848484;
+  margin-bottom: 30px;
+}
+.bookTravelAll__viewPhotos1,
+.bookTravelAll__viewPhotos2{
+  border: 2px solid black;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.bookTravelAll__viewPhotos1:hover,
+.bookTravelAll__viewPhotos2:hover{
+  background-color: black;
+  color: white;
+}
+.nextTour{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+  margin-right: 20px;
+}
+.imgNextTour{
+  max-width: 690px;
+  height: 971px;
+  box-shadow: 14px 15px 46px 0px rgba(0,0,0,0.18);
+}
+.nextTourInfo{
+  max-width: 650px;
+  margin-left: 5rem;
+}
+.nextTourInfo h4{
+  font-family: inherit;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: #c4c4c4;
+}
+.nextTourInfo h2{
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: #000000;
+}
+.nextTourInfo p{
+  font-family: Montserrat;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #5b5b5c;
+}
+.discounterTour{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 370px;
+  background-color: #f4f4f4;
+  margin-top: 4rem;
+}
+.discounterTourInfo{
+  margin-right: 6rem;
+  margin-left: 10px;
+}
+
+.discounterTourInfo h2{
+  font-family: Montserrat;
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+.discounterTourInfo p{
+  font-family: Montserrat;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #5b5b5c;
+}
+.discounterTour form{
+  position: relative;
+  margin-left: 10px;
+}
+.discounterTour form::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(246, 247, 248, 0.9) url(images/loading.gif) center no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+.discounterTour form.sending::after{
+  opacity: 1;
+  visibility: visible;
+}
+
+.discounterTour form input{
+  max-width: 200px;
+  height: 60px;
+  border: 2px solid #7a7a7a;
+}
+.discounterTour form input::placeholder{
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #3a4047;
+}
+
+.discounterTour form input.error{
+  border: 3px solid red;
+}
+.submit{
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+  background-color: black;
+  cursor: pointer;
+}
+.submit:hover{
+  color: black;
+  background-color: #ffffff;
+}
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+.footerInfo{}
+.footerInfo a{
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #000000;
+  margin-left: 5rem;
+}
+.footerAllRights{
+  text-align: center;
+  margin-top: 3rem;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.34em;
+  color: #000000;
+}
+.footerAllRights h4,
+.footerAllRights p{
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: #000000;
+}
+.footerInfo a:hover{
+  font-weight: bold;
+}
+/*media (min-width: 768px) and (max-width: 979px){}
+
+@media (min-width: 481px) and (max-width: 767px) {}*/
+
+@media (max-width: 480px) {
+  .menu{
+    display:flex;
+    padding: 10px;
+  }
+  .menu ul{
+    margin: 0;
+  }
+  .moto__statement h1 {
+    font-size: 50px;
+    margin: 10px;
+  }
+  .moto__statement2 {
+    margin-left: 10px;
+  }
+}
